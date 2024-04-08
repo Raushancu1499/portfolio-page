@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="prospect1.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="profile">
+            <div class="profile_container">
+                <div class="profile_img">
+
+                </div><img class="ahd" src="raushan pic 2.png" alt="Raushan's photo">
+                <div>
+                    <p class="profile_name id">
+                        <span class="Fname">Raushan</span>
+                        <span class="Lname">Kumar</span>
+
+
+
+                    </p>
+
+                    <p class="profile_title">B.E. CSE Student </p>
+
+                    <head>
+                        <style>
+                            .typing-text {
+                                color: rgb(229, 255, 0);
+                                font-size: 25px;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                            }
+                        </style>
+                    </head>
+
+
+
+                    <p id="typing-text"
+                        style="color: rgb(255, 0, 0); font-size: 15px; font-weight: bold; text-transform: uppercase;">
+                    </p>
+
+                    <script>
+                        const text = ["The only limit to our realization of tomorrow will be our doubts of today.", "Coding is the art of turning coffee into code and bugs into features!", "The best way to predict the future is to invent it.", "Simplicity is the ultimate sophistication.", "The best way to get a project done is to start it."];
+                        const typingTextElement = document.getElementById("typing-text");
+                        const thirdLineElement = document.getElementById("third-line");
+
+                        let i = 0;
+                        let j = 0;
+                        let delay = 50;
+
+                        function typeWriter() {
+                            if (j < text[i].length) {
+                                typingTextElement.innerHTML += text[i][j];
+                                j++;
+
+                                if (text[i][j] === ".") {
+                                    delay = 150;
+                                } else if (text[i][j] === " ") {
+                                    delay = 100;
+                                } else {
+                                    delay = 100;
+                                }
+
+                                setTimeout(typeWriter, delay);
+                            } else {
+                                setTimeout(eraseText, delay);
+                            }
+                        }
+
+                        function eraseText() {
+                            if (j > 0) {
+                                typingTextElement.innerHTML = typingTextElement.innerHTML.slice(0, -1);
+                                j--;
+
+                                if (text[i][j] === ".") {
+                                    delay = 25;
+                                } else if (text[i][j] === " ") {
+                                    delay = 25;
+                                } else {
+                                    delay = 25;
+                                }
+
+                                setTimeout(eraseText, delay);
+                            } else {
+                                j = 0;
+                                i = (i + 1) % text.length;
+                                setTimeout(typeWriter, delay);
+                            }
+                        }
+
+                        setTimeout(typeWriter, delay);
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        <div class="group-1">
+            <div class="hobbies">
+                <h2 class="title">Interests</h2>
+                <ul class="Hobbies_list description">
+                    <li>Highly interested in studying history of <strong class="Tag">human civilizations </strong>
+                        <strong class="Tag">and wars of the olden days.</strong>
+                    </li>
+                    <li>Passionate about <strong class="Tag">fiddling with hardware components</strong> and <strong
+                            class="Tag">understanding how they work.</strong></li>
+                    <li>Knowledgeable about<strong class="Tag"> stockmarket industry</strong>, <strong class="Tag">and
+                            option trading .</strong></li>
+                    <li>Interested in<strong class="Tag"> learning more about coding </strong> and <strong class="Tag">
+                            hardware emulation.</strong>
+                    <li>Curious about learning artifical intillgence</li>
+                    </li>
+                </ul>
+
+                <h3 class="title">Experience</h3>
+                <ul class="Hobbies_list description">
+                    <li>worked on <strong class="Tag">bluetooth module car </strong> </li>
+                    <li>worked on <strong class="Tag">product lending page</strong> </li>
+                    <li>won a competition of<strong class="Tag"> redhat academy</strong></li>
+                    <li>done practice for 6 months in <strong class="Tag"> option trading</strong></li>
+
+                </ul>
+            </div>
+
+            <h2 class="title">CERTIFICATE</h2>
+
+            <div><i data-fether="crosshair"></i><a href="C:\Users\raush\html css\responsive.html">click here to see my
+                    achievements</a></div>
+
+        </div>
+        <div class="group-2">
+            <div class="expertise">
+                <h2 class="title">Expertise</h2>
+                <ul class="exp_list description">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Python</li>
+                    <li>c</li>
+                    <li>Trading analyst</li>
+                    <li>Content Certification</li>
+                </ul>
+            </div>
+
+            <div class="edu">
+                <h2 class="title">Education</h2>
+                <div class="edu_item">
+                    <p class="item_preTitle">2023-Present</p>
+                    <h3 class="item_title">B.E. CSE</h3>
+                    <p class="item_subtitle">Chitkara University</p>
+                </div>
+                <div class="edu_item">
+                    <p class="item_preTitle">2016-2022</p>
+                    <h3 class="item_title">High School Education</h3>
+                    <p class="item_subtitle">Alliance international School</p>
+                </div>
+            </div>
+
+            <div class="interest">
+                <h2 class="title">Hobbies</h2>
+                <div class="intItems">
+                    <div class="intElement">
+                        <i data-feather="headphones"></i>
+                        <span>Music</span>
+                    </div>
+
+                    <div class="intElement">
+                        <i data-feather="aperture"></i>
+                        <span>Photography</span>
+                    </div>
+
+                    <div class="intElement">
+                        <i data-feather="book-open"></i>
+                        <span>Reading</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="group-3">
+            <div class="contact">
+                <h2 class="title">Contact</h2>
+                <div class="contact_info">
+                    <p class="description">Mohali,punjab India</p>
+                    <p class="description">Phone No: +91 8264898815</p>
+                    <P class="description">raushanbca998@gmail.com</P>
+                </div>
+
+            </div>
+
+            <div class="socials">
+                <h2 class="title">Socials</h2>
+
+                <div class="SocialItems">
+                    <a class="socialItem" href="https://github.com/Raushancu1499">
+                        <i data-feather="github"></i>
+                        <span>Raushan kumar</span>
+                    </a>
+                    <a class="socialItem" href="https://www.instagram.com/codeswith_lucifer?igsh=NjFhOGMzYTE3ZQ==">
+                        <i data-feather="instagram"></i>
+                        <span>Raushan kumar</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        feather.replace();
+    </script>
+
+</body>
+
+</html>

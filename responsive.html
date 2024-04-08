@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="profile_container">
+                <div class="profile_img">
+                    <img src="raushan pic 2.png" alt="Raushan kumar">
+                </div>
+                <div>
+                    <h1 class="profile_name">
+                        <span class="Fname">Raushan</span>
+                        <span class="Lname">Kumar</span>
+                    </h1>
+                    <p class="profile_title">B.E. CSE Under Grad. </p>
+
+                    <head>
+                        <style>
+                            .typing-text {
+                                color: rgb(229, 255, 0);
+                                font-size: 25px;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                            }
+                        </style>
+                    </head>
+
+
+
+                    <p id="typing-text"
+                        style="color: rgb(255, 0, 0); font-size: 15px; font-weight: bold; text-transform: uppercase;">
+                    </p>
+
+                    <script>
+                        const text = ["The only limit to our realization of tomorrow will be our doubts of today.", "Coding is the art of turning coffee into code and bugs into features!", "The best way to predict the future is to invent it.", "Simplicity is the ultimate sophistication.", "The best way to get a project done is to start it."];
+                        const typingTextElement = document.getElementById("typing-text");
+                        const thirdLineElement = document.getElementById("third-line");
+
+                        let i = 0;
+                        let j = 0;
+                        let delay = 50;
+
+                        function typeWriter() {
+                            if (j < text[i].length) {
+                                typingTextElement.innerHTML += text[i][j];
+                                j++;
+
+                                if (text[i][j] === ".") {
+                                    delay = 150;
+                                } else if (text[i][j] === " ") {
+                                    delay = 100;
+                                } else {
+                                    delay = 100;
+                                }
+
+                                setTimeout(typeWriter, delay);
+                            } else {
+                                setTimeout(eraseText, delay);
+                            }
+                        }
+
+                        function eraseText() {
+                            if (j > 0) {
+                                typingTextElement.innerHTML = typingTextElement.innerHTML.slice(0, -1);
+                                j--;
+
+                                if (text[i][j] === ".") {
+                                    delay = 25;
+                                } else if (text[i][j] === " ") {
+                                    delay = 25;
+                                } else {
+                                    delay = 25;
+                                }
+
+                                setTimeout(eraseText, delay);
+                            } else {
+                                j = 0;
+                                i = (i + 1) % text.length;
+                                setTimeout(typeWriter, delay);
+                            }
+                        }
+
+                        setTimeout(typeWriter, delay);
+                    </script>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="group-1">
+            <div class="hobbies">
+                <h2 class="title">Achievements</h2>
+
+            </div>
+            <table>
+
+
+                <div class="certificate-item">
+                    <p class="item_preTitle">2023</p>
+                    <h3 class="item_title">Protecting Business Innovation</h3>
+                    <p class="item_subtitle">Hong Kong university of science and technology</p>
+                    <a href="c:\Users\raush\Downloads\business certificate\coursera specilized certified business and innovation.pdf"
+                        target="_blank">
+                        <img src="https://img.freepik.com/premium-vector/graduation-certificate-isolated_25030-40883.jpg"
+                            alt="Certification">
+                    </a>
+
+                </div>
+            </table>
+            <div class="certificate-item">
+                <p class="item_preTitle">2023</p>
+                <h3 class="item_title">Protecting Business Innovation Via Trade Mark</h3>
+                <p class="item_subtitle">Hong Kong university of science and technology</p>
+                <a href="c:\Users\raush\Downloads\business certificate\cousera business 1.pdf" target="_blank">
+                    <img src="https://img.freepik.com/premium-vector/graduation-certificate-isolated_25030-40883.jpg"
+                        alt="Certification">
+                </a>
+            </div>
+        </div>
+        <div class="certificate-item">
+            <p class="item_preTitle">2023</p>
+            <h3 class="item_title">Protecting Business Innovation Via Patent</h3>
+            <p class="item_subtitle">Hong Kong university of science and technology</p>
+            <a href="c:\Users\raush\Downloads\business certificate\cousera business 2.pdf" target="_blank">
+                <img src="https://img.freepik.com/premium-vector/graduation-certificate-isolated_25030-40883.jpg"
+                    alt="Certification">
+            </a>
+
+        </div>
+
+        <div class="certificate-item">
+            <p class="item_preTitle">2023</p>
+            <h3 class="item_title">Protecting Business Innovation Via Copyright</h3>
+            <p class="item_subtitle">Hong Kong university of science and technology</p>
+            <a href="c:\Users\raush\Downloads\business certificate\Coursera  business 3.pdf" target="_blank">
+                <img src="https://img.freepik.com/premium-vector/graduation-certificate-isolated_25030-40883.jpg"
+                    alt="Certification">
+            </a>
+
+        </div>
+        <div class="certificate-item">
+            <p class="item_preTitle">2023</p>
+            <h3 class="item_title"> Protecting Business Innovation Via Strategy</h3>
+            <p class="item_subtitle">Hong Kong university of science and technology</p>
+            <a href="c:\Users\raush\Downloads\business certificate\Coursera  business 4.pdf" target="_blank">
+                <img src="https://img.freepik.com/premium-vector/graduation-certificate-isolated_25030-40883.jpg"
+                    alt="Certification">
+            </a>
+
+        </div>
+
+
+
+
+
+    </div>
+    <div class="interest">
+        ...
+    </div>
+
+
+
+
+    </div>
+
+
+
+    </div>
+
+
+
+
+    <script>
+        feather.replace();
+    </script>
+
+</body>
+
+</html>
